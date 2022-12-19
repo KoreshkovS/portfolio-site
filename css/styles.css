@@ -1,0 +1,359 @@
+body {
+  font-family: "Inter";
+  font-size: 16px;
+  font-weight: 400;
+  color: #232e35;
+}
+ul {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.text {
+  line-height: 32px;
+}
+.title-lable {
+  text-transform: uppercase;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 2;
+  letter-spacing: 7.5px;
+  color: #656d72;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+.title-value-big {
+  font-size: 44px;
+  line-height: 55px;
+}
+.title-value span {
+  color: #7e74f1;
+}
+.title-lable::before {
+  content: "";
+  width: 16px;
+  height: 2px;
+  background-color: #d9d9d9;
+}
+.title-lable:not(:last-child) {
+  margin-bottom: 9px;
+}
+.title-value {
+  margin: 0;
+  font-family: "Plus Jakarta Sans";
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.25;
+}
+.header {
+  top: 0;
+  left: 0;
+}
+.header-container {
+  display: flex;
+  align-items: center;
+  min-height: 123px;
+}
+
+.header-menu {
+  flex: 1 1 auto;
+}
+.header-button {
+  border: 1px solid #f1f1f1;
+  border-radius: 8px;
+  padding: 16px 24px;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 17px;
+  color: #232e35;
+  transition: all 0.3s ease 0s;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+.header-button:hover {
+  color: white;
+  background-color: #7e74f1;
+  border: 1px solid #7e74f1;
+}
+.menu {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.menu-list {
+  display: flex;
+  flex-wrap: wrap;
+}
+.menu-item:not(:last-child) {
+  margin-right: 56px;
+}
+.menu-link {
+  font-weight: 500;
+  line-height: 19px;
+  transition: color 0.3s ease 0s;
+  color: #232e35;
+}
+.menu-link:hover {
+  color: #7e74f1;
+}
+.main-section-container {
+  display: grid;
+  align-items: center;
+  min-height: 100%;
+  grid-template-columns: repeat(2, 1fr);
+  margin-top: 150px;
+  margin-bottom: 145px;
+}
+.main-section-text {
+  max-width: 538px;
+  margin-top: 32px;
+}
+.main-section-image {
+  justify-self: end;
+  position: relative;
+  max-width: 336px;
+}
+.main-section-image-picture {
+  background: #eae6fe;
+  border-radius: 16px;
+}
+.main-section-social-list {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  margin-top: 40px;
+}
+.main-section-social-list-item:not(:last-child) {
+  margin-right: 32px;
+}
+.main-section-social-list-link {
+  display: block;
+  width: 20px;
+  height: 20px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 17px auto;
+}
+.social-inst {
+  background-image: url(../img/icons/instagram.svg);
+}
+.social-git {
+  background-image: url(../img/icons/github.svg);
+}
+.social-twitter {
+  background-image: url(../img/icons/twitter.svg);
+}
+.social-linkedin {
+  background-image: url(../img/icons/linkedin.svg);
+}
+
+.services {
+  background-color: #fbfbfb;
+}
+.services-container {
+  padding-top: 115px;
+  padding-bottom: 184px;
+}
+.services-title {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-content: center;
+}
+.services-list {
+  display: grid;
+  gap: 56px;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+}
+.services-list-item {
+  background: #ffffff;
+  border-radius: 8px;
+  max-width: 361px;
+  max-height: 294px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.services-img {
+  background: #f5f3fe;
+  border-radius: 16px;
+  width: 24px;
+  height: 24px;
+  padding: 16px;
+  margin-top: 53px;
+}
+.services-title-skill {
+  font-family: "Plus Jakarta Sans";
+  font-weight: 500;
+  line-height: 20px;
+}
+.services-text {
+  max-width: 247px;
+  font-size: 14px;
+  line-height: 24px;
+  text-align: center;
+}
+.portfolio-container {
+  margin-top: 104px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.portfolio-header {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 144px;
+}
+.portfolio-controls {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+.portfolio-arrow {
+  border: none;
+  width: 40px;
+  height: 40px;
+  background: #eae6fe;
+  border-radius: 16px;
+  cursor: pointer;
+  transition: all 0.3s ease 0s;
+}
+.portfolio-arrow:hover {
+  background: #d5cdff;
+}
+.item-portfolio {
+  width: 361px;
+  border: 1px solid #f5f5f5;
+  border-radius: 0px 0px 8px 8px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+.portfolio-slide {
+  display: grid;
+  align-items: center;
+  grid-template-columns: repeat(3, 1fr);
+  margin-bottom: 176px;
+}
+
+.item-portfolio-body {
+  margin: 24px auto 24px 24px;
+}
+.item-portfolio-link-title {
+  font-family: "Plus Jakarta Sans";
+  font-weight: 500;
+  line-height: 20px;
+  color: #232e35;
+  margin-bottom: 16px;
+}
+.item-portfolio-image {
+  opacity: 0.5;
+  transition: opacity 0.8s ease 0s;
+}
+.item-portfolio-image:hover {
+  opacity: 1;
+  transform: scale(1.05);
+}
+.item-portfolio-footer {
+  margin-top: 16px;
+}
+.item-portfolio-category {
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 15px;
+  color: #656d72;
+  border: 1px solid #f1f1f1;
+  border-radius: 4px;
+  padding: 8px 4px;
+}
+.item-portfolio-link {
+  margin-left: 16px;
+}
+
+.experices {
+  background: #fbfbfb;
+  padding-top: 104px;
+}
+
+@media (max-width: 992px) {
+  .portfolio-slide {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .menu-item:not(:last-child) {
+    margin-right: 10px;
+  }
+  .header-container {
+    min-height: 60px;
+  }
+  .main-section-container {
+    margin-top: 30px;
+    grid-template-columns: repeat(1, 1fr);
+    margin-bottom: 20px;
+  }
+  .main-section-image {
+    margin: 10px auto 0;
+  }
+  .main-section-text {
+    max-width: none;
+    margin-top: 10px;
+  }
+  .main-section-social-list {
+    margin-top: 10px;
+  }
+  .services-container {
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+  .services-list {
+    gap: 10px;
+  }
+  .services-list-item:not(:last-child) {
+    margin-bottom: 10px;
+  }
+  .portfolio-container {
+    margin-top: 10px;
+  }
+  .portfolio-slide {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+  .item-portfolio {
+    margin-bottom: 10px;
+  }
+  .portfolio-header {
+    margin-bottom: 10px;
+  }
+  .experices {
+    padding-top: 10px;
+  }
+}
+
+@media (max-width: 576px) {
+  .menu-list {
+    display: block;
+  }
+  .menu-item:not(:last-child) {
+    margin-bottom: 5px;
+  }
+  .main-section-image-picture {
+    width: 90%;
+  }
+  .services-list {
+    padding: 0 auto;
+  }
+}
+
+@media (max-width: 375px) {
+}
