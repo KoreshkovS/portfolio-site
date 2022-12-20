@@ -254,7 +254,7 @@ a {
   margin-bottom: 16px;
 }
 .item-portfolio-link-title:hover {
-  text-decoration: underline;
+  color: #7e74f1;
 }
 .item-portfolio-image {
   opacity: 0.5;
@@ -278,7 +278,7 @@ a {
 }
 .item-portfolio-category:hover {
   border: 1px solid #a4a1a1;
-  color: #4e5458;
+  color: #7e74f1;
 }
 .item-portfolio-link {
   margin-left: 16px;
