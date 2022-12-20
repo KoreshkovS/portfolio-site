@@ -253,6 +253,9 @@ a {
   color: #232e35;
   margin-bottom: 16px;
 }
+.item-portfolio-link-title:hover {
+  text-decoration: underline;
+}
 .item-portfolio-image {
   opacity: 0.5;
   transition: opacity 0.8s ease 0s;
@@ -272,6 +275,10 @@ a {
   border: 1px solid #f1f1f1;
   border-radius: 4px;
   padding: 8px 4px;
+}
+.item-portfolio-category:hover {
+  border: 1px solid #a4a1a1;
+  color: #4e5458;
 }
 .item-portfolio-link {
   margin-left: 16px;
