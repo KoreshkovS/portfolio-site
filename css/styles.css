@@ -288,6 +288,15 @@ a {
   background: #fbfbfb;
   padding-top: 104px;
 }
+.experices-container {
+  display: grid;
+  align-items: center;
+  grid-template-columns: auto 1fr;
+}
+.career-tabs {
+  display: grid;
+  grid-template-columns: auto 1fr;
+}
 
 @media (max-width: 992px) {
   .portfolio-slide {
