@@ -4,11 +4,26 @@ body {
   font-weight: 400;
   color: #232e35;
 }
+h1,
+h2,
+h3,
+h4,
+h5 {
+  padding: 0;
+  margin: 0;
+}
 ul {
   list-style: none;
+  margin: 0;
+  padding: 0;
 }
 a {
   text-decoration: none;
+}
+button {
+  border: none;
+  background: none;
+  cursor: pointer;
 }
 .container {
   max-width: 1200px;
@@ -217,7 +232,6 @@ a {
   gap: 16px;
 }
 .portfolio-arrow {
-  border: none;
   width: 40px;
   height: 40px;
   background: #eae6fe;
@@ -287,15 +301,86 @@ a {
 .experices {
   background: #fbfbfb;
   padding-top: 104px;
+  padding-bottom: 127px;
 }
 .experices-container {
   display: grid;
-  align-items: center;
+  align-content: center;
+  grid-auto-flow: column;
+  grid-template-rows: auto auto;
   grid-template-columns: auto 1fr;
+  column-gap: 144px;
+  row-gap: 80px;
 }
 .career-tabs {
   display: grid;
   grid-template-columns: auto 1fr;
+}
+.career-content {
+  grid-row: span 2;
+}
+.career-navigation {
+  display: grid;
+  gap: 9px;
+}
+.navigation-career-title {
+  text-align: left;
+  padding: 14px 24px;
+  line-height: 19px;
+}
+._tab-active {
+  color: #7e74f1;
+  background: #ffffff;
+}
+.content-career-title {
+  font-family: "Plus Jakarta Sans";
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 23px;
+  margin-bottom: 8px;
+}
+.content-career-link-title {
+  text-decoration-line: underline;
+  color: #232e35;
+}
+.content-career-location {
+  font-size: 14px;
+  line-height: 17px;
+  color: #656d72;
+  margin-bottom: 16px;
+}
+.content-career-time {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 24px;
+  color: #656d72;
+  margin-bottom: 16px;
+}
+.content-career-categories {
+  margin-bottom: 32px;
+}
+.catygory-link {
+  padding: 4px 8px;
+  border: 1px solid #f1f1f1;
+  border-radius: 4px;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 15px;
+  color: #656d72;
+}
+.catygory-link:hover {
+  border: 1px solid #a4a1a1;
+  color: #7e74f1;
+}
+.catygory-link:not(:last-child) {
+  margin-right: 16px;
+}
+.list-content-career-item {
+  line-height: 19px;
+  color: #656d72;
+}
+.list-content-career-item:not(:last-child) {
+  margin-bottom: 16px;
 }
 
 @media (max-width: 992px) {
@@ -353,6 +438,14 @@ a {
   }
   .experices {
     padding-top: 10px;
+    padding-bottom: 10px;
+  }
+  .experices-container {
+    column-gap: 14px;
+    row-gap: 8px;
+  }
+  .experices-title {
+    font-size: 25px;
   }
 }
 
