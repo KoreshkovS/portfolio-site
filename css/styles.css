@@ -183,6 +183,7 @@ button {
 .services-list {
   display: grid;
   gap: 56px;
+  margin-top: 144px;
   grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
 }
 .services-list-item {
@@ -382,6 +383,16 @@ button {
 .list-content-career-item:not(:last-child) {
   margin-bottom: 16px;
 }
+.blog-container {
+  margin: 144px 0;
+
+}
+.title-blog {
+  display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-content: center;
+}
 
 @media (max-width: 992px) {
   .portfolio-slide {
@@ -417,6 +428,7 @@ button {
   }
   .services-list {
     gap: 10px;
+    margin-top: 10px;
   }
   .services-list-item:not(:last-child) {
     margin-bottom: 10px;
@@ -446,6 +458,9 @@ button {
   }
   .experices-title {
     font-size: 25px;
+  }
+  .blog-container {
+    margin-top: 10px 0;
   }
 }
 
