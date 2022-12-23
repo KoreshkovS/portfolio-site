@@ -202,6 +202,7 @@ button {
   height: 24px;
   padding: 16px;
   margin-top: 53px;
+  margin-bottom: 24px;
 }
 .services-title-skill {
   font-family: "Plus Jakarta Sans";
@@ -390,6 +391,7 @@ button {
   display: grid;
   align-items: center;
   grid-template-columns: repeat(3, 1fr);
+  margin-bottom: 181px;
 }
 .title-blog {
   display: flex;
@@ -406,13 +408,59 @@ button {
   max-width: 361px;
   padding-bottom: 24px;
 }
-
+.blog-image {
+  margin-bottom: 16px;
+}
+.blog-item-container {
+  margin: 0 16px;
+  margin-bottom: 32px;
+}
+.blog-list-title {
+  font-family: "Plus Jakarta Sans";
+  font-weight: 500;
+  line-height: 24px;
+  margin-bottom: 20px;
+}
+.blog-date {
+  background: #fbfbfb;
+  border-radius: 4px;
+  padding: 4px 8px;
+  max-width: 94px;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 15px;
+  color: #656d72;
+}
+.blog-text {
+  line-height: 32px;
+  color: #656d72;
+}
+.link-location {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.blog-link {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 17px;
+  color: #656d72;
+}
+.blog-link:hover {
+  color: #7e74f1;
+}
+.clients {
+  background: #FBFBFB;
+  padding-top: 104px;
+  padding-bottom: 153px;
+}
 @media (max-width: 992px) {
   .portfolio-slide {
     grid-template-columns: repeat(2, 1fr);
   }
   .blog-list {
     grid-template-columns: repeat(2, 1fr);
+    row-gap: 10px;
   }
 }
 
@@ -482,6 +530,7 @@ button {
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin-bottom: 10px;
   }
   .blog-list-item:not(:last-child) {
     margin-bottom: 10px;
@@ -491,6 +540,11 @@ button {
 @media (max-width: 576px) {
   .menu-list {
     display: block;
+  }
+  .services-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
   .menu-item:not(:last-child) {
     margin-bottom: 5px;
