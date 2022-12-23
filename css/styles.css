@@ -377,6 +377,11 @@ button {
 .catygory-link:not(:last-child) {
   margin-right: 16px;
 }
+.content-career-list {
+  border-top: 1px solid #F1F1F1;
+  padding-top: 32px;
+
+}
 .list-content-career-item {
   line-height: 19px;
   color: #656d72;
