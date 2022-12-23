@@ -385,17 +385,33 @@ button {
 }
 .blog-container {
   margin: 144px 0;
-
+}
+.blog-list {
+  display: grid;
+  align-items: center;
+  grid-template-columns: repeat(3, 1fr);
 }
 .title-blog {
   display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-    align-content: center;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-content: center;
+  margin: 144px 0;
+}
+.blog-list-item {
+  border-width: 0px 1px 1px 1px;
+  border-style: solid;
+  border-color: #f1f1f1;
+  border-radius: 8px;
+  max-width: 361px;
+  padding-bottom: 24px;
 }
 
 @media (max-width: 992px) {
   .portfolio-slide {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .blog-list {
     grid-template-columns: repeat(2, 1fr);
   }
 }
@@ -459,8 +475,16 @@ button {
   .experices-title {
     font-size: 25px;
   }
-  .blog-container {
-    margin-top: 10px 0;
+  .title-blog {
+    margin: 10px 0;
+  }
+  .blog-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .blog-list-item:not(:last-child) {
+    margin-bottom: 10px;
   }
 }
 
