@@ -378,9 +378,8 @@ button {
   margin-right: 16px;
 }
 .content-career-list {
-  border-top: 1px solid #F1F1F1;
+  border-top: 1px solid #f1f1f1;
   padding-top: 32px;
-
 }
 .list-content-career-item {
   line-height: 19px;
@@ -455,10 +454,23 @@ button {
   color: #7e74f1;
 }
 .clients {
-  background: #FBFBFB;
+  background: #fbfbfb;
   padding-top: 104px;
   padding-bottom: 153px;
 }
+.clients-item-image {
+  border: 2px solid #ffffff;
+  border-radius: 1000px;
+}
+.clients-item-container {
+  padding-top: 81px;
+  background: #ffffff;
+  border-radius: 8px;
+  max-width: 360px;
+  padding-left: 32px;
+  padding-bottom: 24px;
+}
+
 @media (max-width: 992px) {
   .portfolio-slide {
     grid-template-columns: repeat(2, 1fr);
