@@ -458,17 +458,46 @@ button {
   padding-top: 104px;
   padding-bottom: 153px;
 }
+.clients-list {
+  display: grid;
+  align-items: center;
+  grid-template-columns: repeat(3, 1fr);
+}
+.clients-list-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 .clients-item-image {
+  margin-top: 80px;
   border: 2px solid #ffffff;
   border-radius: 1000px;
 }
 .clients-item-container {
-  padding-top: 81px;
+  padding: 81px 52px 24px 32px;
   background: #ffffff;
   border-radius: 8px;
   max-width: 360px;
-  padding-left: 32px;
-  padding-bottom: 24px;
+}
+.clients-item-text {
+  line-height: 28px;
+  max-width: 276px;
+}
+.clients-item-name {
+  font-family: "Plus Jakarta Sans";
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 24px;
+}
+.clients-item-job {
+  max-width: 68px;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 15px;
+  color: #656d72;
+  background: #fbfbfb;
+  border-radius: 4px;
+  padding: 4px 8px;
 }
 
 @media (max-width: 992px) {
@@ -478,6 +507,9 @@ button {
   .blog-list {
     grid-template-columns: repeat(2, 1fr);
     row-gap: 10px;
+  }
+  .clients-list {
+    grid-template-columns: repeat(2, 1fr);
   }
 }
 
@@ -551,6 +583,15 @@ button {
   }
   .blog-list-item:not(:last-child) {
     margin-bottom: 10px;
+  }
+  .clients {
+    padding-top: 10px;
+  }
+  .clients-list {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .clients-item-image {
+    margin-top: 10px;
   }
 }
 
