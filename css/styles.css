@@ -336,6 +336,7 @@ button {
 }
 .content-career-title {
   font-family: "Plus Jakarta Sans";
+  margin-top: 32px;
   font-weight: 500;
   font-size: 18px;
   line-height: 23px;
@@ -384,6 +385,17 @@ button {
 .list-content-career-item {
   line-height: 19px;
   color: #656d72;
+  position: relative;
+  padding-left: 18px;
+}
+.list-content-career-item::before {
+  content: "";
+  background: #D9D9D9;
+  width: 10px;
+  height: 2px;
+  position: absolute;
+  left: 0;
+  top: 8px;
 }
 .list-content-career-item:not(:last-child) {
   margin-bottom: 16px;
