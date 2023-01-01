@@ -477,7 +477,7 @@ button {
   display: grid;
   gap: 30px;
   align-items: center;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
 }
 .clients-list-item {
   background: #ffffff;
@@ -526,7 +526,6 @@ button {
     row-gap: 10px;
   }
   .clients-list {
-    grid-template-columns: repeat(2, 1fr);
     gap: 50px;
   }
 }
@@ -604,9 +603,6 @@ button {
   }
   .clients {
     padding-top: 10px;
-  }
-  .clients-list {
-    grid-template-columns: repeat(1, 1fr);
   }
   .clients-title {
     margin-bottom: 70px;
