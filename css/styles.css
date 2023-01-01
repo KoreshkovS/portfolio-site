@@ -470,46 +470,51 @@ button {
   padding-top: 104px;
   padding-bottom: 153px;
 }
+.clients-title {
+  margin-bottom: 132px;
+}
 .clients-list {
   display: grid;
+  gap: 30px;
   align-items: center;
   grid-template-columns: repeat(3, 1fr);
 }
 .clients-list-item {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-.clients-item-image {
-  margin-top: 80px;
-  border: 2px solid #ffffff;
-  border-radius: 1000px;
-}
-.clients-item-container {
-  padding: 81px 52px 24px 32px;
   background: #ffffff;
   border-radius: 8px;
-  max-width: 360px;
+  display: flex;
+  flex-direction: column;
+  padding: 0px 38px 24px 38px;
+}
+.clients-item-image {
+  overflow: hidden;
+  height: 96px;
+  border: 2px solid #ffffff;
+  border-radius: 1000px;
+  align-self: center;
+  transform: translate(0px, -50%);
 }
 .clients-item-text {
   line-height: 28px;
-  max-width: 276px;
+  margin-bottom: 48px;
 }
 .clients-item-name {
   font-family: "Plus Jakarta Sans";
   font-weight: 500;
   font-size: 14px;
-  line-height: 24px;
+  line-height: 18px;
+  margin-bottom: 9px;
 }
-.clients-item-job {
+.clients-item-profession {
+  background: #fbfbfb;
+  border-radius: 4px;
   display: inline-block;
+  padding: 4px 8px;
   font-weight: 500;
   font-size: 12px;
   line-height: 15px;
   color: #656d72;
-  background: #fbfbfb;
-  border-radius: 4px;
-  padding: 4px 8px;
+  align-self: flex-start;
 }
 
 @media (max-width: 992px) {
@@ -522,6 +527,7 @@ button {
   }
   .clients-list {
     grid-template-columns: repeat(2, 1fr);
+    gap: 50px;
   }
 }
 
@@ -602,8 +608,8 @@ button {
   .clients-list {
     grid-template-columns: repeat(1, 1fr);
   }
-  .clients-item-image {
-    margin-top: 10px;
+  .clients-title {
+    margin-bottom: 70px;
   }
 }
 
