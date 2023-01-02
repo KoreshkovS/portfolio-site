@@ -25,6 +25,10 @@ button {
   background: none;
   cursor: pointer;
 }
+p {
+  margin: 0;
+  padding: 0;
+}
 .container {
   max-width: 1200px;
   margin: 0 auto;
@@ -516,8 +520,212 @@ button {
   color: #656d72;
   align-self: flex-start;
 }
-.education-title {
+.skills-title {
   margin-top: 105px;
+  margin-bottom: 70px;
+}
+.skills-body {
+  display: grid;
+  gap: 20px;
+  grid-template-columns: 1fr 1fr;
+  margin-bottom: 176px;
+}
+.skills-timeline {
+  display: grid;
+  gap: 64px;
+  position: relative;
+}
+.skills-timeline::before {
+  content: "";
+  position: absolute;
+  left: 12px;
+  top: 0;
+  height: 100%;
+  width: 1px;
+
+  background-color: #f1f1f1;
+}
+.timeline-item {
+  padding-left: 28px;
+  position: relative;
+}
+.timeline-item::before {
+  content: "";
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  z-index: 3;
+  background-color: #f1f1f1;
+  left: 4px;
+  top: 0;
+}
+.timeline-title {
+  font-family: "Plus Jakarta Sans";
+  font-weight: 500;
+  line-height: 20px;
+  margin-bottom: 10px;
+}
+.timeline-item:last-child::after {
+  content: "";
+  z-index: 2;
+  position: absolute;
+  width: 1px;
+  height: 100%;
+  left: 12px;
+  bottom: 0;
+  background-color: #fff;
+}
+.timeline-text {
+  font-size: 14px;
+  line-height: 17px;
+  color: #656d72;
+  margin-bottom: 24px;
+}
+.timeline-date {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 17px;
+}
+.content-skills-text {
+  margin-bottom: 64px;
+  line-height: 32px;
+  color: #656d72;
+}
+.content-skills-items {
+  display: grid;
+  gap: 40px;
+}
+.content-skills-label {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 17px;
+}
+.content-skills-line {
+  margin-top: 16px;
+  content: "";
+  position: relative;
+  border-radius: 2px 0px 0px 2px;
+  height: 8px;
+  background-color: #f5f3fe;
+}
+.content-skills-line span {
+  position: absolute;
+  border-radius: 2px 0px 0px 2px;
+  background-color: #7e74f1;
+  height: 100%;
+  top: 0;
+  left: 0;
+}
+.contacts {
+  background: #fbfbfb;
+  padding-top: 104px;
+  padding-bottom: 134px;
+}
+.contacts-contant {
+  display: flex;
+  align-items: center;
+}
+.contacts-body {
+  flex: 0 1 50%;
+  padding-left: 105px;
+}
+.list-contacts-item {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+.list-contacts-icon {
+  flex: 0 0 56px;
+  height: 56px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #f5f3fe;
+  border-radius: 16px;
+}
+.list-contacts-title {
+  font-weight: 500;
+  line-height: 19px;
+  margin-bottom: 4px;
+}
+.list-contacts-text {
+  font-size: 14px;
+  line-height: 24px;
+  color: #656d72;
+  transition: color 0.3s ease 0s;
+}
+.list-contacts-text:hover {
+  color: #7e74f1;
+}
+.contacts-list {
+  display: grid;
+  gap: 45px;
+}
+.contacts-form {
+  flex: 0 1 50%;
+}
+.form-input {
+  width: 90%;
+  height: 48px;
+  background: #ffffff;
+  border-radius: 8px;
+  padding: 0px 24px;
+  font-size: 14px;
+  line-height: 17px;
+}
+.form-input::placeholder {
+  color: #656d72;
+}
+.form-input:focus::placeholder {
+  color: #232e35;
+}
+textarea.form-input {
+  height: 190px;
+  resize: vertical;
+  padding: 24px;
+}
+.form-button {
+  background-color: #7e74f1;
+  padding: 16px;
+  width: 100%;
+  border: 1px solid #eae6fe;
+  border-radius: 8px;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 17px;
+  color: #f5f3fe;
+  transition: background-color 0.3s ease 0s;
+}
+.form-button:hover {
+  background-color: #6c63cf;
+}
+.form-item:last-child {
+  padding-top: 22px;
+}
+.form-item:not(:last-child) {
+  margin-bottom: 20px;
+}
+.footer-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding-top: 88px;
+  padding-bottom: 88px;
+}
+.footer-copy {
+  margin-top: 24px;
+  font-size: 14px;
+  line-height: 17px;
+  color: #656d72;
+}
+.footer-copy a {
+  color: #656d72;
+  transition: color 0.3s ease 0s;
+}
+.footer-copy a:hover {
+  color: #7e74f1;
 }
 
 @media (max-width: 992px) {
@@ -606,12 +814,33 @@ button {
   }
   .clients {
     padding-top: 10px;
+    padding-bottom: 10px;
   }
   .clients-title {
     margin-bottom: 70px;
   }
-  .education-title {
+  .skills-title {
     margin-top: 10px;
+    margin-bottom: 10px;
+  }
+  .skills-body {
+    grid-template-columns: repeat(1, 1fr);
+    margin-bottom: 10px;
+  }
+  .contacts {
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+  .contacts-contant {
+    flex-direction: column-reverse;
+  }
+  .contacts-body {
+    margin-top: 30px;
+  }
+  .contacts-form {
+    margin-top: 30px;
+    flex: 0 0 auto;
+    width: 100%;
   }
 }
 
