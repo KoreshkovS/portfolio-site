@@ -516,6 +516,9 @@ button {
   color: #656d72;
   align-self: flex-start;
 }
+.education-title {
+  margin-top: 105px;
+}
 
 @media (max-width: 992px) {
   .portfolio-slide {
@@ -606,6 +609,9 @@ button {
   }
   .clients-title {
     margin-bottom: 70px;
+  }
+  .education-title {
+    margin-top: 10px;
   }
 }
 
